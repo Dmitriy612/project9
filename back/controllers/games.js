@@ -13,7 +13,7 @@ const sendGameCreated = (req, res) => {
 //PUT
 const sendGameUpdated = (req, res) => {
     res.setHeader('Content-Type', 'application/json');
-    res.end("Game updated successfully");
+    res.status(200).send(JSON.stringify({ message: "Игра обновлена" }));
 };
 
 //DELETE
